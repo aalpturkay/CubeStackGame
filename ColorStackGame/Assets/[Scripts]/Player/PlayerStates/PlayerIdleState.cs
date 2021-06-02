@@ -14,11 +14,16 @@ namespace Player.PlayerStates
 
         public void Enter()
         {
+            _playerSm.SlideHand.SetActive(true);
             Debug.Log("Player Enter State");
         }
 
         public void Tick()
         {
+            if (Input.GetMouseButtonUp(0))
+            {
+                _playerSm.ChangeState(_playerSm.RunState);
+            }
         }
 
         public void FixedTick()
@@ -27,6 +32,7 @@ namespace Player.PlayerStates
 
         public void Exit()
         {
+            _playerSm.SlideHand.SetActive(false);
         }
     }
 }
