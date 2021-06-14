@@ -1,5 +1,6 @@
 using BaseState;
 using DG.Tweening;
+using Managers;
 using UnityEngine;
 
 namespace Player.PlayerStates
@@ -16,6 +17,7 @@ namespace Player.PlayerStates
 
         public void Enter()
         {
+            _playerSm.LevelText.SetText($"{SaveManager.Instance.Level}");
             _playerSm.LevelBar.SetActive(true);
             _playerSm.CameraAnim.Play("PlayerCam");
             _playerSm.PlayerAnim.SetTrigger("boxJoggingTrigger");

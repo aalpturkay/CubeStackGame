@@ -38,6 +38,7 @@ namespace Player.PlayerSM
         [SerializeField] private Transform finishLineTransform;
         [SerializeField] private GameObject levelBar;
         [SerializeField] private TextMeshProUGUI levelText;
+        [SerializeField] private Transform freeCubesTransform;
         public PlayerIdleState IdleState => _idleState;
 
         public PlayerRunState RunState => _runState;
@@ -80,6 +81,8 @@ namespace Player.PlayerSM
         public GameObject LevelBar => levelBar;
 
         public TextMeshProUGUI LevelText => levelText;
+
+        public Transform FreeCubesTransform => freeCubesTransform;
 
         private void Awake()
         {

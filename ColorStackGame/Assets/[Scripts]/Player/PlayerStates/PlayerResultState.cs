@@ -1,5 +1,6 @@
 using System.Collections;
 using BaseState;
+using Managers;
 using UnityEngine;
 
 namespace Player.PlayerStates
@@ -46,6 +47,7 @@ namespace Player.PlayerStates
         private void OnNextButtonClicked()
         {
             Debug.Log("next");
+            LevelManager.Instance.LoadNextLevel();
         }
 
         public void Tick()

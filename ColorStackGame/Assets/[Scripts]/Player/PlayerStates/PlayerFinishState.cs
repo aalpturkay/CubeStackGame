@@ -101,14 +101,14 @@ namespace Player.PlayerStates
             {
                 if (cube != null)
                 {
-                    cube.transform.parent = null;
+                    cube.transform.parent = _playerSM.FreeCubesTransform;
                     cube.transform.DOMove(new Vector3(_playerSM.StackPointTransform.position.x,
                         _playerSM.StackPointTransform.position.y + cubeScale,
-                        _playerSM.StackPointTransform.position.z), .02f);
+                        _playerSM.StackPointTransform.position.z), .01f);
                     cubeScale++;
                 }
 
-                yield return new WaitForSeconds(.02f);
+                yield return new WaitForSeconds(.01f);
             }
 
             _playerSM.PlayerAnim.SetTrigger("runTrig");
