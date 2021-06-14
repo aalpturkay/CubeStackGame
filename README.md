@@ -12,7 +12,7 @@ Kısa Bağlantı: https://bit.ly/32k9MnJ
 
 Github Adresimiz: https://github.com/bmdersleri
 
-Youtube Video Linki : https://www.youtube.com/watch?v=jMU-8607W-c&t=135s
+Youtube Video Linki : https://www.youtube.com/watch?v=jMU-8607W-c
 
 Oyun Tanıtım Videosu Youtube Linki : https://youtu.be/7rnNW0hP3mw
 
